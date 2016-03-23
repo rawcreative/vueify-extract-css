@@ -1,20 +1,20 @@
 {
   "name": "vueify-extract-css",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Browserify plugin to extract css when using vueify. Derived from stackcss/css-extract",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository" : "rawcreative/vueify-extract-css",
-  "keywords" : [
-  	"vueify",
-  	"extract-css",
-  	"css",
-  	"extract",
-  	"browserify",
-  	"plugin",
-  	"transform"
+  "repository": "rawcreative/vueify-extract-css",
+  "keywords": [
+    "vueify",
+    "extract-css",
+    "css",
+    "extract",
+    "browserify",
+    "plugin",
+    "transform"
   ],
   "author": "T. Debo <tim@rawcreativestudios.com>",
   "license": "MIT",
