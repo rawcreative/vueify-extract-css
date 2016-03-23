@@ -1,0 +1,16 @@
+{
+  "name": "vueify-extract-css",
+  "version": "0.0.1",
+  "description": "Browserify plugin to extract css when using vueify. Derived from stackcss/css-extract",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "T. Debo <tim@rawcreativestudios.com>",
+  "license": "MIT",
+  "dependencies": {
+    "falafel": "^1.2.0",
+    "is-require": "0.0.1",
+    "through2": "^2.0.1"
+  }
+}
