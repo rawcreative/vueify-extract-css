@@ -6,6 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository" : "rawcreative/vueify-extract-css",
+  "keywords" : [
+  	"vueify",
+  	"extract-css",
+  	"css",
+  	"extract",
+  	"browserify",
+  	"plugin",
+  	"transform"
+  ],
   "author": "T. Debo <tim@rawcreativestudios.com>",
   "license": "MIT",
   "dependencies": {
