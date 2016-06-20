@@ -41,7 +41,7 @@ require('laravel-elixir-vueify');
 elixir.config.js.browserify.plugins.push({
     name: 'vueify-extract-css',
     options: {
-		out: 'path/to/extracted/css'
+		out: 'path/to/extracted/bundle.css'
 	}
 });
 ```
