@@ -1,6 +1,6 @@
 {
   "name": "vueify-extract-css",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Browserify plugin to extract css when using vueify. Derived from stackcss/css-extract",
   "main": "index.js",
   "scripts": {
