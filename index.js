@@ -39,25 +39,26 @@ function cssExtract(bundle, opts) {
 
 function extract(chunk) {
 
-  if (chunk.source.indexOf('vueify-insert-css') === -1) return ''
+  if (chunk.source.indexOf('__vueify_insert__') === -1) return ''
 
   const css = []
 
   const ast = falafel(chunk.source, {
     ecmaVersion: 6
   }, function(node) {
-    if (!isRequire(node)) return
 
+    if(node.type !== 'CallExpression') return
+
+    if(!node.callee.object) return 
+
+    if(!node.callee.object.name || node.callee.object.name !== '__vueify_insert__') return
+      
     if (!node.arguments) return
 
     if (!node.arguments[0]) return
-
-    if (node.arguments[0].value !== 'vueify-insert-css') return
-
-    if (!node.parent.parent.arguments || !node.parent.parent.arguments[0]) return
-
-    css.push(node.parent.parent.arguments[0].value)
-    node.parent.parent.update('0')
+ 
+    css.push(node.arguments[0].value)
+    node.update('0')
   });
 
   chunk.source = ast.toString()
